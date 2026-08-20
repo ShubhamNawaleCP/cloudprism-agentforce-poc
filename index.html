@@ -698,12 +698,12 @@
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US';
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
 				'00Dg500000F0Dj1',
-				'CP_Prospect_Concierge',
-				'https://orgfarm-c6d7469f63-dev-ed.develop.my.site.com/ESWCPProspectConcierge1787158596264',
+				'CP_Prospect_Concierge_External_V1',
+				'https://orgfarm-c6d7469f63-dev-ed.develop.my.site.com/ESWCPProspectConcierge1787205230594',
 				{
 					scrt2URL: 'https://orgfarm-c6d7469f63-dev-ed.develop.my.salesforce-scrt.com'
 				}
@@ -713,11 +713,7 @@
 		}
 	};
 </script>
+<script type='text/javascript' src='https://orgfarm-c6d7469f63-dev-ed.develop.my.site.com/ESWCPProspectConcierge1787205230594/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
-<script
-	type='text/javascript'
-	src='https://orgfarm-c6d7469f63-dev-ed.develop.my.site.com/ESWCPProspectConcierge1787158596264/assets/js/bootstrap.min.js'
-	onload='initEmbeddedMessaging()'>
-</script>
 </body>
 </html>
