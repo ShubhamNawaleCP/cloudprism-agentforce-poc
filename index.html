@@ -695,6 +695,29 @@
        ============================================================ -->
 
   <!-- PASTE SALESFORCE-GENERATED ENHANCED WEB CHAT SNIPPET HERE -->
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US';
 
+			embeddedservice_bootstrap.init(
+				'00Dg500000F0Dj1',
+				'CP_Prospect_Concierge',
+				'https://orgfarm-c6d7469f63-dev-ed.develop.my.site.com/ESWCPProspectConcierge1787158596264',
+				{
+					scrt2URL: 'https://orgfarm-c6d7469f63-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+
+<script
+	type='text/javascript'
+	src='https://orgfarm-c6d7469f63-dev-ed.develop.my.site.com/ESWCPProspectConcierge1787158596264/assets/js/bootstrap.min.js'
+	onload='initEmbeddedMessaging()'>
+</script>
 </body>
 </html>
